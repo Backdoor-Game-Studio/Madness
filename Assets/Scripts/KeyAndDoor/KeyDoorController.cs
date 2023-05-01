@@ -34,7 +34,7 @@ namespace KeySystem
         }
         public void PlayAnimation() 
         {
-            if(_keyInventory.hasKey)
+            if(_keyInventory.hasKey01)
             {
                 OpenDoor();
             }

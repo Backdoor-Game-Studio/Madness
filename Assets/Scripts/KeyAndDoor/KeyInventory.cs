@@ -6,6 +6,9 @@ namespace KeySystem
 {
     public class KeyInventory : MonoBehaviour
     {
-        public bool hasKey=false;
+        public bool openpermission = true;
+        public bool hasKey01=false;
+        public bool hasKey02=false;
+        public bool hasKey03=false;
     }
 }
