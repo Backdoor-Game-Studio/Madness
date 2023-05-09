@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    
     public void PlayGame()
     {
         SceneManager.LoadScene(3);
     }
-    public void Chapters()
+    public void Saves()
     {
         SceneManager.LoadScene(2);
     }
@@ -21,6 +22,7 @@ public class Menu : MonoBehaviour
     }
     public void Logout()
     {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         Debug.Log("Logging out");
     }
 }

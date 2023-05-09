@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuScene.unity
     guid: 653bf56406dba7d4288bc7588c8163f0
   - enabled: 1
-    path: Assets/Scenes/ChapterScene.unity
+    path: Assets/Scenes/SavesScene.unity
     guid: cfa3ab3429df4784b914c5c43a5cc674
   - enabled: 1
     path: Assets/Scenes/Map1.unity
@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map3.unity
     guid: ce8d79a3006b9e649be71c533ff11e8b
+  - enabled: 1
+    path: Assets/Scenes/EndingScene.unity
+    guid: 672c70817fdb52647985c2126ea33fd9
+  - enabled: 1
+    path: Assets/Scenes/YouDiedScene.unity
+    guid: c933ab5027979b745b433eab303de7cb
   m_configObjects: {}

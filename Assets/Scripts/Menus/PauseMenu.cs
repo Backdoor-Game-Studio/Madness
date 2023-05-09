@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class PauseMenu : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 isVisible = !isVisible;
                 Canvas.SetActive(isVisible);
+                
 
             }
             else
@@ -40,7 +42,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1.0f;
         isPaused = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        
     }
 
     void PauseGame()
@@ -48,7 +50,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
-        Cursor.lockState = CursorLockMode.None;
+        
     }
 
     public void Resume()
@@ -56,7 +58,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1.0f;
         isPaused = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        
     }
 
     public void Quit()

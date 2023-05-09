@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - InteractiveObject
+  - Door
+  - pills
+  - Key
+  - Bed
   layers:
   - Default
   - TransparentFX
