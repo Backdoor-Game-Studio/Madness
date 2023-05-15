@@ -21,6 +21,12 @@ public class EntityMovement : MonoBehaviour
     {
         animator = gameObject.GetComponent<Animator>();
     }
+
+    private void Start()
+    {
+        animator.Play("SadWalk");
+    }
+
     private bool isSeePlayer(Vector3 directionToPlayer)
     {
         // Check if player is within detection radius
@@ -47,7 +53,6 @@ public class EntityMovement : MonoBehaviour
         // Move towards the player
         agent.destination = player.position;
         //agent.SetDestination(Player);
-        agent.speed = run;
 
         if (Vector3.Distance(player.position, transform.position) < 100f)
         {

@@ -9,6 +9,7 @@ public class Menu : MonoBehaviour
     
     public void PlayGame()
     {
+        Destroy(GameObject.FindGameObjectWithTag("LobbyMusic"));
         SceneManager.LoadScene(3);
     }
     public void Saves()

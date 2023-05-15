@@ -11,16 +11,22 @@ public class DoorController : MonoBehaviour
     public bool key1 = false;
     public bool key2 = false;
     public float MaxDistance = 5;
+    private Animator animator = null;
 
-    private void useDoor(RaycastHit door)
+    private List<GameObject> openedDoorList = new List<GameObject>();
+
+    private async void useDoor(RaycastHit door)
     {
+        animator = door.transform.gameObject.GetComponent<Animator>();
+        
 
         switch (door.transform.GameObject().name)
         {
             case "Door0":
                 if (key0)
                 {
-                    Destroy(door.transform.GameObject());
+                    //Destroy(door.transform.GameObject());
+                    animator.Play("OpenDoor", 0, 0f);
                     return;
                 }
                 else return;
@@ -28,7 +34,8 @@ public class DoorController : MonoBehaviour
             case "Door1":
                 if (key1)
                 {
-                    Destroy(door.transform.GameObject());
+                    //Destroy(door.transform.GameObject());
+                    animator.Play("OpenDoor", 0, 0f);
                     return;
                 }
                 else return;
@@ -36,14 +43,17 @@ public class DoorController : MonoBehaviour
             case "Door2":
                 if (key2)
                 {
-                    Destroy(door.transform.GameObject());
+                    //Destroy(door.transform.GameObject());
+                    animator.Play("OpenDoor", 0, 0f);
                     return;
                 }
                 else return;
         }
 
         //Z�r n�lk�li ajt� script
-        Destroy(door.transform.GameObject());
+        //Destroy(door.transform.GameObject());
+        animator.Play("OpenDoor", 0, 0f);
+
     }
 
     private void targetIsDoor()

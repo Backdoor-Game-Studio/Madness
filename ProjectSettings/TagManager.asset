@@ -4,20 +4,20 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - InteractiveObject
-  - Door
   - pills
-  - Key
+  - Door
   - Bed
+  - Key
+  - LobbyMusic
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground
+  - 
   - Water
   - UI
-  - pBody
-  - Interact
+  - 
+  - 
   - 
   - 
   - 
